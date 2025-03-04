@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#adminPanel {
+    animation: slideIn 0.8s ease-in-out;
+    border: 2px solid #ff6f61;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.text-primary {
+    color: #ff6f61 !important;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+}
